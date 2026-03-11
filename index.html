@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khufu's Cuisine | Giza, Egypt</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Khufu's Cuisine</div>
+      <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Khufu's Cuisine</h1>
+      <p>Authentic Egyptian cuisine in Giza, Egypt, inspired by heritage, hospitality, and the timeless beauty of the Egyptian culture and history.</p>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <p class="section-text">Enjoy traditional Egyptian dishes made with rich flavors, fresh ingredients, and recipes inspired by locals.</p>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h3>Koshari</h3>
+          <span class="price">$20 USD</span>
+          <p>A famous Egyptian dish made with rice, lentils, macaroni, chickpeas, fried onions, and spicy tomato sauce.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Molokhia with Chicken</h3>
+          <span class="price">$25 USD</span>
+          <p>Traditional molokhia soup served with rice and roasted chicken, full of classic Egyptian flavor.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Mahshi Platter</h3>
+          <span class="price">$75 USD</span>
+          <p>Stuffed grape leaves, peppers, and zucchini with seasoned rice and herbs.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Grilled Kofta</h3>
+          <span class="price">$30 USD</span>
+          <p>Juicy grilled kofta served with Egyptian bread, tahini, salad, and fries.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Feteer Meshaltet</h3>
+          <span class="price">$35 USD</span>
+          <p>Layered Egyptian pastry served with cheese, honey, or meat fillings.</p>
+        </div>
+        <div class="menu-card">
+          <h3>Basbousa</h3>
+          <span class="price">$80 USD</span>
+          <p>Sweet semolina cake soaked in syrup, a beloved Egyptian dessert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-text">Explore our collection of delicious dishes and the warm atmosphere of our restaurant.</p>
+      <div class="gallery-wrapper">
+        <div class="slides" id="slides">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80" alt="Egyptian food dish">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1400&q=80" alt="Grilled meat dish">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80" alt="Restaurant interior">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80" alt="Rice and side dishes">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=80" alt="Dessert and tea">
+          <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1400&q=80" alt="Dining area">
+        </div>
+      </div>
+      <div class="slider-buttons">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Khufu's Cuisine</h2>
+      <div class="about-box">
+        <p>
+          Located in the historic city of Giza, Khufu’s Cuisine was created to celebrate the rich flavors and traditions of Egyptian cuisine. 
+          Inspired by the culture surrounding the Great Pyramids and the timeless hospitality of Egyptian homes, our restaurant was founded with one goal: 
+          to share authentic Egyptian food in a welcoming and memorable environment. Our menu highlights national dishes prepared with fresh ingredients and traditional techniques. 
+          Each dish reflects the heritage of Egyptian cooking and the flavors that have been passed down through generations. 
+          At Khufu’s Cuisine, we believe that dining is more than just eating—it is an experience. Our warm atmosphere, inspired by the Egyptian culture, invites visitors to relax, share meals with family and friends, and enjoy the taste of Egypt in the heart of Giza. 
+          Whether you are a traveler exploring the pyramids or a local food lover, we welcome you to discover the authentic spirit of Egyptian cuisine.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-grid">
+        <iframe src="https://www.google.com/maps?q=Khufu's%20Restaurant%20Giza%20Egypt&z=15&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        <form>
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea rows="6" placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Follow us:
+      <a href="https://facebook.com" target="_blank"><u>Facebook</u></a> |
+      <a href="https://instagram.com" target="_blank"><u>Instagram</u></a>
+    </p>
+    <p class="hours">Business Hours: <br> Monday - Friday: 11:00 AM – 10:00 PM <br> Saturday: 10:00 AM – 11:00 PM <br>Sunday: 10:00 AM – 9:00 PM</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
