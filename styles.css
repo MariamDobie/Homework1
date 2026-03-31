@@ -373,6 +373,17 @@ footer {
   pointer-events: none;
 }
 
+/* Social links styling - white color */
+.social-link {
+  color: rgb(14, 133, 230);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #f8f8f8;
+}
+
 @keyframes fadeInOut {
   0% {
     opacity: 0;
