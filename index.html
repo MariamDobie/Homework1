@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Khufu's Cuisine | Giza, Egypt</title>
-    <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
@@ -15,6 +15,7 @@
         <ul id="navLinks">
           <li><a href="#home">Home</a></li>
           <li><a href="#menu">Menu</a></li>
+          <li><a href="#cart">Cart</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -38,31 +39,51 @@
           <h3>Koshari</h3>
           <span class="price">$20 USD</span>
           <p>A famous Egyptian dish made with rice, lentils, macaroni, chickpeas, fried onions, and spicy tomato sauce.</p>
+          <button onclick="addToCart('Koshari', 20)">Add to Cart</button>
         </div>
         <div class="menu-card">
           <h3>Molokhia with Chicken</h3>
           <span class="price">$25 USD</span>
           <p>Traditional molokhia soup served with rice and roasted chicken, full of classic Egyptian flavor.</p>
+          <button onclick="addToCart('Molokhia with Chicken', 25)">Add to Cart</button>
         </div>
         <div class="menu-card">
           <h3>Mahshi Platter</h3>
           <span class="price">$75 USD</span>
           <p>Stuffed grape leaves, peppers, and zucchini with seasoned rice and herbs.</p>
+          <button onclick="addToCart('Mahshi Platter', 75)">Add to Cart</button>
         </div>
         <div class="menu-card">
           <h3>Grilled Kofta</h3>
           <span class="price">$30 USD</span>
           <p>Juicy grilled kofta served with Egyptian bread, tahini, salad, and fries.</p>
+          <button onclick="addToCart('Grilled Kofta', 30)">Add to Cart</button>
         </div>
         <div class="menu-card">
           <h3>Feteer Meshaltet</h3>
           <span class="price">$35 USD</span>
           <p>Layered Egyptian pastry served with cheese, honey, or meat fillings.</p>
+          <button onclick="addToCart('Feteer Meshaltet', 35)">Add to Cart</button>
         </div>
         <div class="menu-card">
           <h3>Basbousa</h3>
           <span class="price">$80 USD</span>
           <p>Sweet semolina cake soaked in syrup, a beloved Egyptian dessert.</p>
+          <button onclick="addToCart('Basbousa', 80)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart">
+    <div class="container">
+      <h2 class="section-title">Shopping Cart</h2>
+      <div class="cart-container">
+        <div id="cart-items"></div>
+        <div class="cart-total-area">
+          <span>Total Amount:</span>
+          <span class="cart-total-price">$<span id="cart-total">0</span></span>
+          <button class="clear-cart-btn" onclick="clearCart()">Remove All Items</button>
         </div>
       </div>
     </div>
@@ -94,11 +115,11 @@
       <h2 class="section-title">About Khufu's Cuisine</h2>
       <div class="about-box">
         <p>
-          Located in the historic city of Giza, Khufu’s Cuisine was created to celebrate the rich flavors and traditions of Egyptian cuisine. 
+          Located in the historic city of Giza, Khufu's Cuisine was created to celebrate the rich flavors and traditions of Egyptian cuisine. 
           Inspired by the culture surrounding the Great Pyramids and the timeless hospitality of Egyptian homes, our restaurant was founded with one goal: 
           to share authentic Egyptian food in a welcoming and memorable environment. Our menu highlights national dishes prepared with fresh ingredients and traditional techniques. 
           Each dish reflects the heritage of Egyptian cooking and the flavors that have been passed down through generations. 
-          At Khufu’s Cuisine, we believe that dining is more than just eating—it is an experience. Our warm atmosphere, inspired by the Egyptian culture, invites visitors to relax, share meals with family and friends, and enjoy the taste of Egypt in the heart of Giza. 
+          At Khufu's Cuisine, we believe that dining is more than just eating—it is an experience. Our warm atmosphere, inspired by the Egyptian culture, invites visitors to relax, share meals with family and friends, and enjoy the taste of Egypt in the heart of Giza. 
           Whether you are a traveler exploring the pyramids or a local food lover, we welcome you to discover the authentic spirit of Egyptian cuisine.
         </p>
       </div>
@@ -110,7 +131,7 @@
       <h2 class="section-title">Contact Us</h2>
       <div class="contact-grid">
         <iframe src="https://www.google.com/maps?q=Khufu's%20Restaurant%20Giza%20Egypt&z=15&output=embed" allowfullscreen="" loading="lazy"></iframe>
-        <form>
+        <form id="contactForm">
           <input type="text" placeholder="Name" required>
           <input type="email" placeholder="Email" required>
           <textarea rows="6" placeholder="Message" required></textarea>
@@ -122,11 +143,12 @@
 
   <footer>
     <p>Follow us:
-      <a href="https://facebook.com" target="_blank"><u>Facebook</u></a> |
+      <a href="https://facebook.com" target="_blank"><u>Facebook</u></a> 
       <a href="https://instagram.com" target="_blank"><u>Instagram</u></a>
     </p>
     <p class="hours">Business Hours: <br> Monday - Friday: 11:00 AM – 10:00 PM <br> Saturday: 10:00 AM – 11:00 PM <br>Sunday: 10:00 AM – 9:00 PM</p>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
